@@ -10,7 +10,7 @@ from django.core.mail import send_mail
 
 
 def list_view(request):
-    posts = Post.objects.filter(status=Post.StatusChoices.PUBLISHED, )
+    posts = Post.objects.filter(status=Post.StatusChoices.PUBLISHED,)
     return render(request, 'list.html', {'posts': posts})
 
 
